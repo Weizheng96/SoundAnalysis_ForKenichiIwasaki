@@ -1,0 +1,22 @@
+function AmpAlongTime_smooth=localMin(AmpAlongTime,sampleTime,stepTime)
+
+AmpAlongTime_smooth=nan(size(AmpAlongTime));
+for t=1:length(AmpAlongTime)
+    step_idx_min=t*stepUint-stepUint+1;
+    step_idx_max=min(t*stepUint,L);
+    time_step=step_idx_min:step_idx_max;
+    
+    step_idx_mid=round((step_idx_min+step_idx_max)/2);
+    sample_idx_min=max(step_idx_mid-SampleUint,1);
+    sample_idx_max=sample_idx_min+SampleUint-1;
+    
+    if sample_idx_max>L
+        sample_idx_min=L-SampleUint+1;
+        sample_idx_max=L;
+    end
+    time_sample=sample_idx_min:sample_idx_max;
+
+    AmpAlongTime_smooth(time_step)=min(AmpAlongTime(time_sample));
+end
+
+end

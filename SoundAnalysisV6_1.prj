@@ -1,0 +1,104 @@
+<deployment-project plugin="plugin.webdeploy" plugin-version="1.0">
+  <configuration file="D:\lab_master\SoundPerception\sound\V6\SoundAnalysisV6_1.prj" location="D:\lab_master\SoundPerception\sound\V6" name="SoundAnalysisV6_1" target="target.webdeploy" target-name="Web App Compiler">
+    <param.appname>SoundAnalysisV6</param.appname>
+    <param.version>1.0</param.version>
+    <param.displayname>SoundAnalysisV6</param.displayname>
+    <param.authnamewatermark>Wei Zheng</param.authnamewatermark>
+    <param.summary />
+    <param.screenshot>C:\Users\Mengfan Wang\AppData\Local\Temp\tp68d0f016_9b8f_4302_8f22_d3a0bd6cb638.png</param.screenshot>
+    <param.intermediate>${PROJECT_ROOT}\SoundAnalysisV6_1</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\SoundAnalysisV6_1</param.files.only>
+    <param.output>${PROJECT_ROOT}\Web</param.output>
+    <param.logdir>${PROJECT_ROOT}\SoundAnalysisV6_1</param.logdir>
+    <param.target.type>subtarget.web.app</param.target.type>
+    <param.user.defined.mcr.options />
+    <param.support.packages />
+    <unset>
+      <param.version />
+      <param.displayname />
+      <param.summary />
+      <param.intermediate />
+      <param.files.only />
+      <param.logdir />
+      <param.target.type />
+      <param.user.defined.mcr.options />
+      <param.support.packages />
+    </unset>
+    <fileset.web.main>
+      <file>${PROJECT_ROOT}\SoundAnalysisV6.mlapp</file>
+    </fileset.web.main>
+    <fileset.resources />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\functions\FFTparameter.m</file>
+      <file>${PROJECT_ROOT}\functions\FindPeak.m</file>
+      <file>${PROJECT_ROOT}\functions\GetAdjustedTrackGroup.m</file>
+      <file>${PROJECT_ROOT}\functions\GetParameters.m</file>
+      <file>${PROJECT_ROOT}\functions\getSpectrumTime.m</file>
+      <file>${PROJECT_ROOT}\functions\GetStartAndEndTime.m</file>
+      <file>${PROJECT_ROOT}\functions\GetTracks.m</file>
+      <file>${PROJECT_ROOT}\functions\IterativelyShortestDistanceCircle.m</file>
+      <file>${PROJECT_ROOT}\functions\IterativelyShortestDistanceCircle_Start.m</file>
+      <file>${PROJECT_ROOT}\functions\localMin.m</file>
+      <file>${PROJECT_ROOT}\functions\normalizeSpectrum.m</file>
+      <file>${PROJECT_ROOT}\functions\Orig2RMS.m</file>
+      <file>${PROJECT_ROOT}\functions\RemoveComponentSmallerThan_2D.m</file>
+      <file>${PROJECT_ROOT}\functions\removeRegion.m</file>
+      <file>${PROJECT_ROOT}\functions\RMS2dBSPL.m</file>
+    </fileset.depfun>
+    <fileset.package />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\SoundAnalysisV6_1" name="SoundAnalysisV6.ctf" optional="false">D:\lab_master\SoundPerception\sound\V6\SoundAnalysisV6_1\SoundAnalysisV6.ctf</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>D:\TOOL\matlab2018b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

@@ -1,0 +1,116 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="402955066" file="D:\Work\project\Kenichi\SoundAnalysis\V6\SoundAnalysisV6_6.prj" location="D:\Work\project\Kenichi\SoundAnalysis\V6" name="SoundAnalysisV6_6" target="target.mlapps" target-name="Package App">
+    <param.appname>SoundAnalysisV6_6</param.appname>
+    <param.authnamewatermark>Wei Zheng</param.authnamewatermark>
+    <param.email>zhengw@vt.edu</param.email>
+    <param.company>Virgina Tech</param.company>
+    <param.icon />
+    <param.icons />
+    <param.summary />
+    <param.description />
+    <param.screenshot>C:\Users\zheng\AppData\Local\Temp\tp0d0a1cea_1e6b_4c85_8801_fed337b11991.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>D:\Work\project\Kenichi\SoundAnalysis\V6_6</param.output>
+    <param.guid>b09651ac-763a-4844-85a5-a05d3f9c8455</param.guid>
+    <unset>
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.summary />
+      <param.description />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\SoundAnalysisV6.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\functions\FFTparameter.m</file>
+      <file>${PROJECT_ROOT}\functions\FindPeak.m</file>
+      <file>${PROJECT_ROOT}\functions\GetAdjustedTrackGroup.m</file>
+      <file>${PROJECT_ROOT}\functions\GetParameters.m</file>
+      <file>${PROJECT_ROOT}\functions\getSpectrumTime.m</file>
+      <file>${PROJECT_ROOT}\functions\GetStartAndEndTime.m</file>
+      <file>${PROJECT_ROOT}\functions\GetTracks.m</file>
+      <file>${PROJECT_ROOT}\functions\IterativelyShortestDistanceCircle.m</file>
+      <file>${PROJECT_ROOT}\functions\IterativelyShortestDistanceCircle_Start.m</file>
+      <file>${PROJECT_ROOT}\functions\localMin.m</file>
+      <file>${PROJECT_ROOT}\functions\normalizeSpectrum.m</file>
+      <file>${PROJECT_ROOT}\functions\Orig2RMS.m</file>
+      <file>${PROJECT_ROOT}\functions\RemoveComponentSmallerThan_2D.m</file>
+      <file>${PROJECT_ROOT}\functions\removeRegion.m</file>
+      <file>${PROJECT_ROOT}\functions\RMS2dBSPL.m</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="D:\Work\project\Kenichi\SoundAnalysis" name="V6_6" optional="false">D:\Work\project\Kenichi\SoundAnalysis\V6_6</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>D:\Tool\Matlab</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

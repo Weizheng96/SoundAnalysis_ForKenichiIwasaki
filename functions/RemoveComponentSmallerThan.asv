@@ -1,0 +1,15 @@
+function BoutIdx=RemoveComponentSmallerThan(BoutIdx,LengthThres)
+CC = bwconncomp(BoutIdx);
+if length(size(BoutIdx))==1
+    for CCcnt=1:CC.NumObjects
+        lst=CC.PixelIdxList{CCcnt};
+        if length(lst)<LengthThres
+            BoutIdx(lst)=false;
+        end
+    end
+else
+    [Fre,Time]=size(BoutIdx);
+    
+    
+end
+end
